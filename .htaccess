@@ -1,0 +1,14 @@
+Options -Indexes
+
+<FilesMatch "\.(php|sql)$">
+
+</FilesMatch>
+
+<IfModule mod_rewrite.c> 
+Options +FollowSymLinks 
+RewriteEngine on 
+RewriteCond %{SCRIPT_FILENAME} !-f 
+RewriteCond %{SCRIPT_FILENAME} !-d 
+RewriteBase / 
+RewriteRule ([^/]*)/?$ /$1.php [QSA,L] 
+</IfModule> 

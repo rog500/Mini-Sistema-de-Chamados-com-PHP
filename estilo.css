@@ -1,0 +1,16 @@
+/* CSS Document */
+
+b{
+color:white;
+font:Arial, Helvetica, sans-serif;
+}
+h2{
+color:#FF0000;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin-top: 10px;
+}
